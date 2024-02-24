@@ -1,10 +1,7 @@
 import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'home_page_model.dart';
 export 'home_page_model.dart';
 
@@ -42,16 +39,16 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       key: scaffoldKey,
       backgroundColor: FlutterFlowTheme.of(context).secondary,
       body: Align(
-        alignment: AlignmentDirectional(0.0, 0.0),
+        alignment: const AlignmentDirectional(0.0, 0.0),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(20.0, 60.0, 20.0, 0.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(20.0, 60.0, 20.0, 0.0),
           child: Column(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 27.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 27.0, 0.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 52.0,
@@ -61,7 +58,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 15.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 15.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -89,7 +86,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 5.0, 0.0, 0.0, 2.0),
                             child: TextFormField(
                               controller: _model.textController,
@@ -106,14 +103,14 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 );
                               },
                               obscureText: false,
-                              decoration: InputDecoration(
+                              decoration: const InputDecoration(
                                 hintText: 'Search artist, maker, department...',
                                 enabledBorder: UnderlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Color(0x00000000),
                                     width: 1.0,
                                   ),
-                                  borderRadius: const BorderRadius.only(
+                                  borderRadius: BorderRadius.only(
                                     topLeft: Radius.circular(4.0),
                                     topRight: Radius.circular(4.0),
                                   ),
@@ -123,7 +120,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     color: Color(0x00000000),
                                     width: 1.0,
                                   ),
-                                  borderRadius: const BorderRadius.only(
+                                  borderRadius: BorderRadius.only(
                                     topLeft: Radius.circular(4.0),
                                     topRight: Radius.circular(4.0),
                                   ),
@@ -133,7 +130,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     color: Color(0x00000000),
                                     width: 1.0,
                                   ),
-                                  borderRadius: const BorderRadius.only(
+                                  borderRadius: BorderRadius.only(
                                     topLeft: Radius.circular(4.0),
                                     topRight: Radius.circular(4.0),
                                   ),
@@ -143,7 +140,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     color: Color(0x00000000),
                                     width: 1.0,
                                   ),
-                                  borderRadius: const BorderRadius.only(
+                                  borderRadius: BorderRadius.only(
                                     topLeft: Radius.circular(4.0),
                                     topRight: Radius.circular(4.0),
                                   ),
@@ -191,7 +188,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                       ).toList().take(30).toList();
                       return GridView.builder(
                         padding: EdgeInsets.zero,
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
                           crossAxisSpacing: 10.0,
                           mainAxisSpacing: 10.0,
@@ -230,7 +227,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               );
                             },
                             child: Card(
-                              key: ValueKey('Card_my7o'),
+                              key: const ValueKey('Card_my7o'),
                               clipBehavior: Clip.antiAliasWithSaveLayer,
                               color: Colors.white,
                               elevation: 4.0,
@@ -238,9 +235,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                               child: Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       5.0, 0.0, 5.0, 0.0),
                                   child: Text(
                                     getJsonField(

@@ -2,11 +2,8 @@ import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'search_results_page_model.dart';
 export 'search_results_page_model.dart';
 
@@ -78,12 +75,12 @@ class _SearchResultsPageWidgetState extends State<SearchResultsPageWidget> {
               Container(
                 width: double.infinity,
                 height: 145.0,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
                 ),
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(10.0, 40.0, 10.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(10.0, 40.0, 10.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -94,7 +91,7 @@ class _SearchResultsPageWidgetState extends State<SearchResultsPageWidget> {
                             borderColor: Colors.transparent,
                             borderRadius: 30.0,
                             buttonSize: 46.0,
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.arrow_back,
                               color: Colors.black,
                               size: 24.0,
@@ -104,7 +101,7 @@ class _SearchResultsPageWidgetState extends State<SearchResultsPageWidget> {
                             },
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 7.0, 0.0, 0.0, 0.0),
                             child: Text(
                               'Search',
@@ -127,11 +124,11 @@ class _SearchResultsPageWidgetState extends State<SearchResultsPageWidget> {
                               width: double.infinity,
                               height: 55.0,
                               decoration: BoxDecoration(
-                                color: Color(0xFFF0F5F6),
+                                color: const Color(0xFFF0F5F6),
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     15.0, 0.0, 15.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -161,7 +158,7 @@ class _SearchResultsPageWidgetState extends State<SearchResultsPageWidget> {
                                     ),
                                     Expanded(
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             10.0, 0.0, 0.0, 4.0),
                                         child: TextFormField(
                                           controller: _model.textController,
@@ -187,52 +184,52 @@ class _SearchResultsPageWidgetState extends State<SearchResultsPageWidget> {
                                                     .override(
                                                       fontFamily:
                                                           'Playfair Display',
-                                                      color: Color(0xFF95A1AC),
+                                                      color: const Color(0xFF95A1AC),
                                                       fontSize: 14.0,
                                                       fontWeight:
                                                           FontWeight.bold,
                                                     ),
-                                            enabledBorder: UnderlineInputBorder(
+                                            enabledBorder: const UnderlineInputBorder(
                                               borderSide: BorderSide(
                                                 color: Color(0x00000000),
                                                 width: 1.0,
                                               ),
                                               borderRadius:
-                                                  const BorderRadius.only(
+                                                  BorderRadius.only(
                                                 topLeft: Radius.circular(4.0),
                                                 topRight: Radius.circular(4.0),
                                               ),
                                             ),
-                                            focusedBorder: UnderlineInputBorder(
+                                            focusedBorder: const UnderlineInputBorder(
                                               borderSide: BorderSide(
                                                 color: Color(0x00000000),
                                                 width: 1.0,
                                               ),
                                               borderRadius:
-                                                  const BorderRadius.only(
+                                                  BorderRadius.only(
                                                 topLeft: Radius.circular(4.0),
                                                 topRight: Radius.circular(4.0),
                                               ),
                                             ),
-                                            errorBorder: UnderlineInputBorder(
+                                            errorBorder: const UnderlineInputBorder(
                                               borderSide: BorderSide(
                                                 color: Color(0x00000000),
                                                 width: 1.0,
                                               ),
                                               borderRadius:
-                                                  const BorderRadius.only(
+                                                  BorderRadius.only(
                                                 topLeft: Radius.circular(4.0),
                                                 topRight: Radius.circular(4.0),
                                               ),
                                             ),
                                             focusedErrorBorder:
-                                                UnderlineInputBorder(
+                                                const UnderlineInputBorder(
                                               borderSide: BorderSide(
                                                 color: Color(0x00000000),
                                                 width: 1.0,
                                               ),
                                               borderRadius:
-                                                  const BorderRadius.only(
+                                                  BorderRadius.only(
                                                 topLeft: Radius.circular(4.0),
                                                 topRight: Radius.circular(4.0),
                                               ),
@@ -287,7 +284,7 @@ class _SearchResultsPageWidgetState extends State<SearchResultsPageWidget> {
                             searchResults[searchResultsIndex];
                         return Container(
                           height: 90.0,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.transparent,
                           ),
                           child: FutureBuilder<ApiCallResponse>(
@@ -332,7 +329,7 @@ class _SearchResultsPageWidgetState extends State<SearchResultsPageWidget> {
                                 },
                                 child: Container(
                                   height: 90.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Colors.transparent,
                                   ),
                                   child: InkWell(
@@ -360,7 +357,7 @@ class _SearchResultsPageWidgetState extends State<SearchResultsPageWidget> {
                                             BorderRadius.circular(8.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             10.0, 5.0, 10.0, 5.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -377,7 +374,7 @@ class _SearchResultsPageWidgetState extends State<SearchResultsPageWidget> {
                                             ),
                                             Expanded(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         12.0, 0.0, 0.0, 0.0),
                                                 child: SingleChildScrollView(
@@ -408,7 +405,7 @@ class _SearchResultsPageWidgetState extends State<SearchResultsPageWidget> {
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     3.0,
@@ -420,7 +417,7 @@ class _SearchResultsPageWidgetState extends State<SearchResultsPageWidget> {
                                                           children: [
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,

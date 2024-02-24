@@ -5,10 +5,7 @@ import '/flutter_flow/flutter_flow_toggle_icon.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'art_piece_page_model.dart';
 export 'art_piece_page_model.dart';
 
@@ -79,7 +76,7 @@ class _ArtPiecePageWidgetState extends State<ArtPiecePageWidget> {
               onTap: () async {
                 context.pop();
               },
-              child: Icon(
+              child: const Icon(
                 Icons.arrow_back,
                 color: Colors.black,
                 size: 24.0,
@@ -98,7 +95,7 @@ class _ArtPiecePageWidgetState extends State<ArtPiecePageWidget> {
             ),
             actions: [
               ToggleIcon(
-                key: ValueKey('ToggleIcon_swnx'),
+                key: const ValueKey('ToggleIcon_swnx'),
                 onPressed: () async {
                   final favoritesElement = getJsonField(
                     widget.artPiece,
@@ -122,13 +119,13 @@ class _ArtPiecePageWidgetState extends State<ArtPiecePageWidget> {
                   r'''$.objectID''',
                 )),
                 onIcon: Icon(
-                  key: ValueKey('ToggleIcon_swnx'),
+                  key: const ValueKey('ToggleIcon_swnx'),
                   Icons.favorite,
                   color: FlutterFlowTheme.of(context).primary,
                   size: 25.0,
                 ),
                 offIcon: Icon(
-                  key: ValueKey('ToggleIcon_swnx'),
+                  key: const ValueKey('ToggleIcon_swnx'),
                   Icons.favorite_border,
                   color: FlutterFlowTheme.of(context).tertiary,
                   size: 25.0,
@@ -149,7 +146,7 @@ class _ArtPiecePageWidgetState extends State<ArtPiecePageWidget> {
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Image.network(
-                          key: ValueKey('Image_97w4'),
+                          key: const ValueKey('Image_97w4'),
                           getJsonField(
                             widget.artPiece,
                             r'''$.primaryImage''',
@@ -159,7 +156,7 @@ class _ArtPiecePageWidgetState extends State<ArtPiecePageWidget> {
                           fit: BoxFit.fitWidth,
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               15.0, 20.0, 15.0, 0.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -179,13 +176,13 @@ class _ArtPiecePageWidgetState extends State<ArtPiecePageWidget> {
                                     ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 10.0, 0.0, 5.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 6.0, 0.0),
                                       child: Text(
                                         getJsonField(
@@ -239,13 +236,13 @@ class _ArtPiecePageWidgetState extends State<ArtPiecePageWidget> {
                                         .bodySmall
                                         .override(
                                           fontFamily: 'Playfair Display',
-                                          color: Color(0xFF1E2429),
+                                          color: const Color(0xFF1E2429),
                                           fontSize: 12.0,
                                           fontWeight: FontWeight.bold,
                                         ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 2.0, 0.0, 0.0),
                                     child: Text(
                                       getJsonField(
@@ -278,13 +275,13 @@ class _ArtPiecePageWidgetState extends State<ArtPiecePageWidget> {
                                         .bodySmall
                                         .override(
                                           fontFamily: 'Playfair Display',
-                                          color: Color(0xFF1E2429),
+                                          color: const Color(0xFF1E2429),
                                           fontSize: 12.0,
                                           fontWeight: FontWeight.bold,
                                         ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 2.0, 0.0, 0.0),
                                     child: Text(
                                       getJsonField(
@@ -317,13 +314,13 @@ class _ArtPiecePageWidgetState extends State<ArtPiecePageWidget> {
                                         .bodySmall
                                         .override(
                                           fontFamily: 'Playfair Display',
-                                          color: Color(0xFF1E2429),
+                                          color: const Color(0xFF1E2429),
                                           fontSize: 12.0,
                                           fontWeight: FontWeight.bold,
                                         ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 2.0, 0.0, 0.0),
                                     child: Text(
                                       getJsonField(
@@ -356,13 +353,13 @@ class _ArtPiecePageWidgetState extends State<ArtPiecePageWidget> {
                                         .bodySmall
                                         .override(
                                           fontFamily: 'Playfair Display',
-                                          color: Color(0xFF1E2429),
+                                          color: const Color(0xFF1E2429),
                                           fontSize: 12.0,
                                           fontWeight: FontWeight.bold,
                                         ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 2.0, 0.0, 0.0),
                                     child: Text(
                                       getJsonField(
@@ -380,9 +377,9 @@ class _ArtPiecePageWidgetState extends State<ArtPiecePageWidget> {
                                 ],
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 30.0, 0.0, 20.0),
                                   child: InkWell(
                                     splashColor: Colors.transparent,
@@ -423,7 +420,7 @@ class _ArtPiecePageWidgetState extends State<ArtPiecePageWidget> {
                     color: FlutterFlowTheme.of(context).secondary,
                   ),
                   child: Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: FFButtonWidget(
                       onPressed: () async {
                         await currentUserReference!.update({
@@ -442,7 +439,7 @@ class _ArtPiecePageWidgetState extends State<ArtPiecePageWidget> {
                         context.pushNamed('MyCollection');
                       },
                       text: 'Add to Collection',
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.favorite_border,
                         color: Colors.white,
                         size: 15.0,
@@ -451,9 +448,9 @@ class _ArtPiecePageWidgetState extends State<ArtPiecePageWidget> {
                         width: 200.0,
                         height: 50.0,
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 2.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 2.0, 0.0),
                         color: FlutterFlowTheme.of(context).primary,
                         textStyle:
                             FlutterFlowTheme.of(context).titleMedium.override(
@@ -463,7 +460,7 @@ class _ArtPiecePageWidgetState extends State<ArtPiecePageWidget> {
                                   fontWeight: FontWeight.bold,
                                 ),
                         elevation: 2.0,
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),

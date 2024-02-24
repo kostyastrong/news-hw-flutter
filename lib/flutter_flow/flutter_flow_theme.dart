@@ -190,14 +190,14 @@ class ThemeTypography extends Typography {
   String get headlineMediumFamily => 'Poppins';
   TextStyle get headlineMedium => GoogleFonts.getFont(
         'Poppins',
-        color: Color(0xFF303030),
+        color: const Color(0xFF303030),
         fontWeight: FontWeight.w500,
         fontSize: 22.0,
       );
   String get headlineSmallFamily => 'Poppins';
   TextStyle get headlineSmall => GoogleFonts.getFont(
         'Poppins',
-        color: Color(0xFF303030),
+        color: const Color(0xFF303030),
         fontWeight: FontWeight.w500,
         fontSize: 20.0,
       );
@@ -218,7 +218,7 @@ class ThemeTypography extends Typography {
   String get titleSmallFamily => 'Poppins';
   TextStyle get titleSmall => GoogleFonts.getFont(
         'Poppins',
-        color: Color(0xFF616161),
+        color: const Color(0xFF616161),
         fontWeight: FontWeight.normal,
         fontSize: 16.0,
       );

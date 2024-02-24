@@ -1,7 +1,5 @@
 import 'dart:convert';
-import 'dart:typed_data';
 
-import '/flutter_flow/flutter_flow_util.dart';
 import 'api_manager.dart';
 
 export 'api_manager.dart' show ApiCallResponse;
@@ -15,7 +13,7 @@ class GetArtPieceCall {
     return ApiManager.instance.makeApiCall(
       callName: 'Get Art Piece',
       apiUrl:
-          'https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectID}',
+          'https://collectionapi.metmuseum.org/public/collection/v1/objects/$objectID',
       callType: ApiCallType.GET,
       headers: {},
       params: {},

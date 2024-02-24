@@ -4,7 +4,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'create_account_page_model.dart';
 export 'create_account_page_model.dart';
 
@@ -47,7 +46,7 @@ class _CreateAccountPageWidgetState extends State<CreateAccountPageWidget> {
       body: Stack(
         children: [
           Align(
-            alignment: AlignmentDirectional(0.0, -1.0),
+            alignment: const AlignmentDirectional(0.0, -1.0),
             child: Image.network(
               'https://images.unsplash.com/photo-1559066653-edfd1e6bbbd5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2167&q=80',
               width: double.infinity,
@@ -61,17 +60,17 @@ class _CreateAccountPageWidgetState extends State<CreateAccountPageWidget> {
               Expanded(
                 flex: 3,
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 180.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 180.0, 0.0, 0.0),
                   child: Container(
                     width: double.infinity,
                     height: 100.0,
                     decoration: BoxDecoration(
-                      color: Color(0xFFEEEEEE),
+                      color: const Color(0xFFEEEEEE),
                       borderRadius: BorderRadius.circular(30.0),
                     ),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
                       child: SingleChildScrollView(
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -81,17 +80,17 @@ class _CreateAccountPageWidgetState extends State<CreateAccountPageWidget> {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       4.0, 0.0, 4.0, 15.0),
                                   child: Container(
                                     width: 300.0,
                                     height: 50.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFFE0E0E0),
+                                      color: const Color(0xFFE0E0E0),
                                       borderRadius: BorderRadius.circular(25.0),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           20.0, 0.0, 20.0, 0.0),
                                       child: TextFormField(
                                         controller: _model.emailTextController,
@@ -101,50 +100,50 @@ class _CreateAccountPageWidgetState extends State<CreateAccountPageWidget> {
                                           hintText: 'Email',
                                           hintStyle: GoogleFonts.getFont(
                                             'Open Sans',
-                                            color: Color(0x7F455A64),
+                                            color: const Color(0x7F455A64),
                                             fontWeight: FontWeight.normal,
                                           ),
-                                          enabledBorder: UnderlineInputBorder(
+                                          enabledBorder: const UnderlineInputBorder(
                                             borderSide: BorderSide(
                                               color: Color(0x00000000),
                                               width: 1.0,
                                             ),
                                             borderRadius:
-                                                const BorderRadius.only(
+                                                BorderRadius.only(
                                               topLeft: Radius.circular(4.0),
                                               topRight: Radius.circular(4.0),
                                             ),
                                           ),
-                                          focusedBorder: UnderlineInputBorder(
+                                          focusedBorder: const UnderlineInputBorder(
                                             borderSide: BorderSide(
                                               color: Color(0x00000000),
                                               width: 1.0,
                                             ),
                                             borderRadius:
-                                                const BorderRadius.only(
+                                                BorderRadius.only(
                                               topLeft: Radius.circular(4.0),
                                               topRight: Radius.circular(4.0),
                                             ),
                                           ),
-                                          errorBorder: UnderlineInputBorder(
+                                          errorBorder: const UnderlineInputBorder(
                                             borderSide: BorderSide(
                                               color: Color(0x00000000),
                                               width: 1.0,
                                             ),
                                             borderRadius:
-                                                const BorderRadius.only(
+                                                BorderRadius.only(
                                               topLeft: Radius.circular(4.0),
                                               topRight: Radius.circular(4.0),
                                             ),
                                           ),
                                           focusedErrorBorder:
-                                              UnderlineInputBorder(
+                                              const UnderlineInputBorder(
                                             borderSide: BorderSide(
                                               color: Color(0x00000000),
                                               width: 1.0,
                                             ),
                                             borderRadius:
-                                                const BorderRadius.only(
+                                                BorderRadius.only(
                                               topLeft: Radius.circular(4.0),
                                               topRight: Radius.circular(4.0),
                                             ),
@@ -152,7 +151,7 @@ class _CreateAccountPageWidgetState extends State<CreateAccountPageWidget> {
                                         ),
                                         style: GoogleFonts.getFont(
                                           'Open Sans',
-                                          color: Color(0xFF455A64),
+                                          color: const Color(0xFF455A64),
                                           fontWeight: FontWeight.normal,
                                         ),
                                         validator: _model
@@ -163,17 +162,17 @@ class _CreateAccountPageWidgetState extends State<CreateAccountPageWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       4.0, 0.0, 4.0, 20.0),
                                   child: Container(
                                     width: 300.0,
                                     height: 50.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFFE0E0E0),
+                                      color: const Color(0xFFE0E0E0),
                                       borderRadius: BorderRadius.circular(25.0),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           20.0, 0.0, 20.0, 0.0),
                                       child: TextFormField(
                                         controller:
@@ -184,50 +183,50 @@ class _CreateAccountPageWidgetState extends State<CreateAccountPageWidget> {
                                           hintText: 'Password',
                                           hintStyle: GoogleFonts.getFont(
                                             'Open Sans',
-                                            color: Color(0x7F455A64),
+                                            color: const Color(0x7F455A64),
                                             fontWeight: FontWeight.normal,
                                           ),
-                                          enabledBorder: UnderlineInputBorder(
+                                          enabledBorder: const UnderlineInputBorder(
                                             borderSide: BorderSide(
                                               color: Color(0x00000000),
                                               width: 1.0,
                                             ),
                                             borderRadius:
-                                                const BorderRadius.only(
+                                                BorderRadius.only(
                                               topLeft: Radius.circular(4.0),
                                               topRight: Radius.circular(4.0),
                                             ),
                                           ),
-                                          focusedBorder: UnderlineInputBorder(
+                                          focusedBorder: const UnderlineInputBorder(
                                             borderSide: BorderSide(
                                               color: Color(0x00000000),
                                               width: 1.0,
                                             ),
                                             borderRadius:
-                                                const BorderRadius.only(
+                                                BorderRadius.only(
                                               topLeft: Radius.circular(4.0),
                                               topRight: Radius.circular(4.0),
                                             ),
                                           ),
-                                          errorBorder: UnderlineInputBorder(
+                                          errorBorder: const UnderlineInputBorder(
                                             borderSide: BorderSide(
                                               color: Color(0x00000000),
                                               width: 1.0,
                                             ),
                                             borderRadius:
-                                                const BorderRadius.only(
+                                                BorderRadius.only(
                                               topLeft: Radius.circular(4.0),
                                               topRight: Radius.circular(4.0),
                                             ),
                                           ),
                                           focusedErrorBorder:
-                                              UnderlineInputBorder(
+                                              const UnderlineInputBorder(
                                             borderSide: BorderSide(
                                               color: Color(0x00000000),
                                               width: 1.0,
                                             ),
                                             borderRadius:
-                                                const BorderRadius.only(
+                                                BorderRadius.only(
                                               topLeft: Radius.circular(4.0),
                                               topRight: Radius.circular(4.0),
                                             ),
@@ -250,7 +249,7 @@ class _CreateAccountPageWidgetState extends State<CreateAccountPageWidget> {
                                         ),
                                         style: GoogleFonts.getFont(
                                           'Open Sans',
-                                          color: Color(0xFF455A64),
+                                          color: const Color(0xFF455A64),
                                           fontWeight: FontWeight.normal,
                                         ),
                                         validator: _model
@@ -261,7 +260,7 @@ class _CreateAccountPageWidgetState extends State<CreateAccountPageWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 20.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
@@ -284,19 +283,19 @@ class _CreateAccountPageWidgetState extends State<CreateAccountPageWidget> {
                                     options: FFButtonOptions(
                                       width: 300.0,
                                       height: 50.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 0.0),
                                       iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
+                                          const EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
                                       color: Colors.black,
                                       textStyle: GoogleFonts.getFont(
                                         'Open Sans',
-                                        color: Color(0xFFDEDEDE),
+                                        color: const Color(0xFFDEDEDE),
                                         fontSize: 16.0,
                                       ),
                                       elevation: 2.0,
-                                      borderSide: BorderSide(
+                                      borderSide: const BorderSide(
                                         color: Colors.transparent,
                                         width: 0.0,
                                       ),
@@ -318,7 +317,7 @@ class _CreateAccountPageWidgetState extends State<CreateAccountPageWidget> {
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Playfair Display',
-                                          color: Color(0xFF1F1F1F),
+                                          color: const Color(0xFF1F1F1F),
                                           fontWeight: FontWeight.normal,
                                         ),
                                   ),

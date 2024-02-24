@@ -5,7 +5,6 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'login_page_model.dart';
 export 'login_page_model.dart';
 
@@ -47,7 +46,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
       body: Stack(
         children: [
           Align(
-            alignment: AlignmentDirectional(0.0, -1.0),
+            alignment: const AlignmentDirectional(0.0, -1.0),
             child: Image.network(
               'https://images.unsplash.com/photo-1559066653-edfd1e6bbbd5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2167&q=80',
               width: double.infinity,
@@ -61,17 +60,17 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
               Expanded(
                 flex: 3,
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 180.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 180.0, 0.0, 0.0),
                   child: Container(
                     width: double.infinity,
                     height: 100.0,
                     decoration: BoxDecoration(
-                      color: Color(0xFFEEEEEE),
+                      color: const Color(0xFFEEEEEE),
                       borderRadius: BorderRadius.circular(30.0),
                     ),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
                       child: SingleChildScrollView(
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -81,17 +80,17 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       4.0, 0.0, 4.0, 15.0),
                                   child: Container(
                                     width: 300.0,
                                     height: 50.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFFE0E0E0),
+                                      color: const Color(0xFFE0E0E0),
                                       borderRadius: BorderRadius.circular(25.0),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           20.0, 0.0, 20.0, 0.0),
                                       child: TextFormField(
                                         controller: _model.emailTextController,
@@ -101,50 +100,50 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                           hintText: 'Email',
                                           hintStyle: GoogleFonts.getFont(
                                             'Open Sans',
-                                            color: Color(0x7F455A64),
+                                            color: const Color(0x7F455A64),
                                             fontWeight: FontWeight.normal,
                                           ),
-                                          enabledBorder: UnderlineInputBorder(
+                                          enabledBorder: const UnderlineInputBorder(
                                             borderSide: BorderSide(
                                               color: Color(0x00000000),
                                               width: 1.0,
                                             ),
                                             borderRadius:
-                                                const BorderRadius.only(
+                                                BorderRadius.only(
                                               topLeft: Radius.circular(4.0),
                                               topRight: Radius.circular(4.0),
                                             ),
                                           ),
-                                          focusedBorder: UnderlineInputBorder(
+                                          focusedBorder: const UnderlineInputBorder(
                                             borderSide: BorderSide(
                                               color: Color(0x00000000),
                                               width: 1.0,
                                             ),
                                             borderRadius:
-                                                const BorderRadius.only(
+                                                BorderRadius.only(
                                               topLeft: Radius.circular(4.0),
                                               topRight: Radius.circular(4.0),
                                             ),
                                           ),
-                                          errorBorder: UnderlineInputBorder(
+                                          errorBorder: const UnderlineInputBorder(
                                             borderSide: BorderSide(
                                               color: Color(0x00000000),
                                               width: 1.0,
                                             ),
                                             borderRadius:
-                                                const BorderRadius.only(
+                                                BorderRadius.only(
                                               topLeft: Radius.circular(4.0),
                                               topRight: Radius.circular(4.0),
                                             ),
                                           ),
                                           focusedErrorBorder:
-                                              UnderlineInputBorder(
+                                              const UnderlineInputBorder(
                                             borderSide: BorderSide(
                                               color: Color(0x00000000),
                                               width: 1.0,
                                             ),
                                             borderRadius:
-                                                const BorderRadius.only(
+                                                BorderRadius.only(
                                               topLeft: Radius.circular(4.0),
                                               topRight: Radius.circular(4.0),
                                             ),
@@ -152,7 +151,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                         ),
                                         style: GoogleFonts.getFont(
                                           'Open Sans',
-                                          color: Color(0xFF455A64),
+                                          color: const Color(0xFF455A64),
                                           fontWeight: FontWeight.normal,
                                         ),
                                         validator: _model
@@ -163,17 +162,17 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       4.0, 0.0, 4.0, 20.0),
                                   child: Container(
                                     width: 300.0,
                                     height: 50.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFFE0E0E0),
+                                      color: const Color(0xFFE0E0E0),
                                       borderRadius: BorderRadius.circular(25.0),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           20.0, 0.0, 20.0, 0.0),
                                       child: TextFormField(
                                         controller:
@@ -184,50 +183,50 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                           hintText: 'Password',
                                           hintStyle: GoogleFonts.getFont(
                                             'Open Sans',
-                                            color: Color(0x7F455A64),
+                                            color: const Color(0x7F455A64),
                                             fontWeight: FontWeight.normal,
                                           ),
-                                          enabledBorder: UnderlineInputBorder(
+                                          enabledBorder: const UnderlineInputBorder(
                                             borderSide: BorderSide(
                                               color: Color(0x00000000),
                                               width: 1.0,
                                             ),
                                             borderRadius:
-                                                const BorderRadius.only(
+                                                BorderRadius.only(
                                               topLeft: Radius.circular(4.0),
                                               topRight: Radius.circular(4.0),
                                             ),
                                           ),
-                                          focusedBorder: UnderlineInputBorder(
+                                          focusedBorder: const UnderlineInputBorder(
                                             borderSide: BorderSide(
                                               color: Color(0x00000000),
                                               width: 1.0,
                                             ),
                                             borderRadius:
-                                                const BorderRadius.only(
+                                                BorderRadius.only(
                                               topLeft: Radius.circular(4.0),
                                               topRight: Radius.circular(4.0),
                                             ),
                                           ),
-                                          errorBorder: UnderlineInputBorder(
+                                          errorBorder: const UnderlineInputBorder(
                                             borderSide: BorderSide(
                                               color: Color(0x00000000),
                                               width: 1.0,
                                             ),
                                             borderRadius:
-                                                const BorderRadius.only(
+                                                BorderRadius.only(
                                               topLeft: Radius.circular(4.0),
                                               topRight: Radius.circular(4.0),
                                             ),
                                           ),
                                           focusedErrorBorder:
-                                              UnderlineInputBorder(
+                                              const UnderlineInputBorder(
                                             borderSide: BorderSide(
                                               color: Color(0x00000000),
                                               width: 1.0,
                                             ),
                                             borderRadius:
-                                                const BorderRadius.only(
+                                                BorderRadius.only(
                                               topLeft: Radius.circular(4.0),
                                               topRight: Radius.circular(4.0),
                                             ),
@@ -250,7 +249,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                         ),
                                         style: GoogleFonts.getFont(
                                           'Open Sans',
-                                          color: Color(0xFF455A64),
+                                          color: const Color(0xFF455A64),
                                           fontWeight: FontWeight.normal,
                                         ),
                                         validator: _model
@@ -261,7 +260,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 18.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
@@ -284,19 +283,19 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                     options: FFButtonOptions(
                                       width: 300.0,
                                       height: 50.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 0.0),
                                       iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
+                                          const EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
                                       color: Colors.black,
                                       textStyle: GoogleFonts.getFont(
                                         'Open Sans',
-                                        color: Color(0xFFDEDEDE),
+                                        color: const Color(0xFFDEDEDE),
                                         fontSize: 16.0,
                                       ),
                                       elevation: 2.0,
-                                      borderSide: BorderSide(
+                                      borderSide: const BorderSide(
                                         color: Colors.transparent,
                                         width: 0.0,
                                       ),
@@ -305,7 +304,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 15.0),
                                   child: InkWell(
                                     splashColor: Colors.transparent,
@@ -321,7 +320,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Playfair Display',
-                                            color: Color(0xFF1F1F1F),
+                                            color: const Color(0xFF1F1F1F),
                                             fontWeight: FontWeight.normal,
                                           ),
                                     ),
@@ -330,7 +329,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                               ],
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 15.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
@@ -345,7 +344,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                       'HomePage', context.mounted);
                                 },
                                 text: 'Continue as Guest',
-                                icon: Icon(
+                                icon: const Icon(
                                   Icons.person,
                                   color: Color(0xFF4B39EF),
                                   size: 20.0,
@@ -353,9 +352,9 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                 options: FFButtonOptions(
                                   width: 200.0,
                                   height: 44.0,
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       3.0, 0.0, 10.0, 1.0),
                                   color: Colors.white,
                                   textStyle: GoogleFonts.getFont(
@@ -364,7 +363,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                     fontSize: 15.0,
                                   ),
                                   elevation: 4.0,
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Colors.transparent,
                                     width: 0.0,
                                   ),
@@ -373,18 +372,18 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 15.0),
-                                child: Container(
+                                child: SizedBox(
                                   width: 200.0,
                                   height: 44.0,
                                   child: Stack(
                                     children: [
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: FFButtonWidget(
                                           onPressed: () async {
                                             GoRouter.of(context)
@@ -399,7 +398,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                 'HomePage', context.mounted);
                                           },
                                           text: 'Sign in with Google',
-                                          icon: Icon(
+                                          icon: const Icon(
                                             Icons.add,
                                             color: Colors.transparent,
                                             size: 20.0,
@@ -408,19 +407,19 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                             width: 200.0,
                                             height: 44.0,
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 0.0),
                                             iconPadding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 8.0, 0.0),
                                             color: Colors.white,
                                             textStyle: GoogleFonts.getFont(
                                               'Roboto',
-                                              color: Color(0xFF606060),
+                                              color: const Color(0xFF606060),
                                               fontSize: 15.0,
                                             ),
                                             elevation: 4.0,
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Colors.transparent,
                                               width: 0.0,
                                             ),
@@ -431,12 +430,12 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-0.83, 0.0),
+                                            const AlignmentDirectional(-0.83, 0.0),
                                         child: Container(
                                           width: 22.0,
                                           height: 22.0,
                                           clipBehavior: Clip.antiAlias,
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             shape: BoxShape.circle,
                                           ),
                                           child: Image.network(
@@ -453,7 +452,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                             isAndroid
                                 ? Container()
                                 : Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 15.0),
                                     child: FFButtonWidget(
                                       onPressed: () async {
@@ -468,17 +467,17 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                             'HomePage', context.mounted);
                                       },
                                       text: 'Sign in with Apple',
-                                      icon: FaIcon(
+                                      icon: const FaIcon(
                                         FontAwesomeIcons.apple,
                                         size: 20.0,
                                       ),
                                       options: FFButtonOptions(
                                         width: 200.0,
                                         height: 44.0,
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 0.0),
                                         iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 10.0, 1.0),
                                         color: Colors.white,
                                         textStyle: GoogleFonts.getFont(
@@ -487,7 +486,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                           fontSize: 15.0,
                                         ),
                                         elevation: 4.0,
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Colors.transparent,
                                           width: 0.0,
                                         ),

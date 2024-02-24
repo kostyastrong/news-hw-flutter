@@ -1,11 +1,8 @@
 import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'department_highlights_page_model.dart';
 export 'department_highlights_page_model.dart';
 
@@ -59,7 +56,7 @@ class _DepartmentHighlightsPageWidgetState
           onTap: () async {
             context.pop();
           },
-          child: Icon(
+          child: const Icon(
             Icons.arrow_back,
             color: Colors.black,
             size: 24.0,
@@ -73,7 +70,7 @@ class _DepartmentHighlightsPageWidgetState
                 fontWeight: FontWeight.bold,
               ),
         ),
-        actions: [],
+        actions: const [],
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -116,7 +113,7 @@ class _DepartmentHighlightsPageWidgetState
                             searchResults[searchResultsIndex];
                         return Container(
                           height: 90.0,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.transparent,
                           ),
                           child: FutureBuilder<ApiCallResponse>(
@@ -161,7 +158,7 @@ class _DepartmentHighlightsPageWidgetState
                                 },
                                 child: Container(
                                   height: 90.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Colors.transparent,
                                   ),
                                   child: InkWell(
@@ -188,7 +185,7 @@ class _DepartmentHighlightsPageWidgetState
                                             BorderRadius.circular(8.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             10.0, 5.0, 10.0, 5.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -205,7 +202,7 @@ class _DepartmentHighlightsPageWidgetState
                                             ),
                                             Expanded(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         12.0, 0.0, 0.0, 0.0),
                                                 child: SingleChildScrollView(
@@ -236,7 +233,7 @@ class _DepartmentHighlightsPageWidgetState
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     3.0,
@@ -248,7 +245,7 @@ class _DepartmentHighlightsPageWidgetState
                                                           children: [
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,

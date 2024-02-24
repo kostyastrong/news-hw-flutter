@@ -3,12 +3,8 @@ import '/backend/api_requests/api_calls.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'my_collection_model.dart';
 export 'my_collection_model.dart';
 
@@ -76,9 +72,9 @@ class _MyCollectionWidgetState extends State<MyCollectionWidget> {
             ),
             actions: [
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 3.0, 14.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 3.0, 14.0, 0.0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -128,7 +124,7 @@ class _MyCollectionWidgetState extends State<MyCollectionWidget> {
                           final collectionItem = collection[collectionIndex];
                           return Container(
                             height: 320.0,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Colors.transparent,
                             ),
                             child: FutureBuilder<ApiCallResponse>(
@@ -162,7 +158,7 @@ class _MyCollectionWidgetState extends State<MyCollectionWidget> {
                                   child: Container(
                                     width: double.infinity,
                                     height: 320.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Colors.transparent,
                                     ),
                                     child: InkWell(
@@ -189,7 +185,7 @@ class _MyCollectionWidgetState extends State<MyCollectionWidget> {
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Image.network(
                                                     getJsonField(
@@ -204,17 +200,17 @@ class _MyCollectionWidgetState extends State<MyCollectionWidget> {
                                                 ),
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           1.0, -1.0),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 12.0,
                                                                 12.0, 0.0),
                                                     child: Container(
                                                       width: 30.0,
                                                       height: 30.0,
-                                                      decoration: BoxDecoration(
+                                                      decoration: const BoxDecoration(
                                                         color: Colors.black,
                                                         shape: BoxShape.circle,
                                                       ),
@@ -258,7 +254,7 @@ class _MyCollectionWidgetState extends State<MyCollectionWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -266,7 +262,7 @@ class _MyCollectionWidgetState extends State<MyCollectionWidget> {
                                                 Expanded(
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(12.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Column(
@@ -278,7 +274,7 @@ class _MyCollectionWidgetState extends State<MyCollectionWidget> {
                                                       children: [
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       6.0,
@@ -306,7 +302,7 @@ class _MyCollectionWidgetState extends State<MyCollectionWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       3.0,
@@ -319,7 +315,7 @@ class _MyCollectionWidgetState extends State<MyCollectionWidget> {
                                                             children: [
                                                               Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
