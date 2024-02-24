@@ -30,9 +30,6 @@ dependencies:
   cloud_firestore: 4.13.1
   cloud_firestore_platform_interface: 6.0.5
   cloud_firestore_web: 3.8.5
-  cloud_functions: 4.5.8
-  cloud_functions_platform_interface: 5.5.11
-  cloud_functions_web: 4.6.11
   collection: 1.17.2
   equatable: 2.0.5
   firebase_auth: 4.15.2
@@ -43,9 +40,6 @@ dependencies:
   firebase_core_web: 2.10.0
   firebase_crashlytics: 3.4.8
   firebase_crashlytics_platform_interface: 3.6.16
-  firebase_messaging: 14.7.8
-  firebase_messaging_platform_interface: 4.5.17
-  firebase_messaging_web: 3.5.17
   firebase_performance: 0.9.3+8
   firebase_performance_platform_interface: 0.1.4+16
   firebase_performance_web: 0.1.4+16
