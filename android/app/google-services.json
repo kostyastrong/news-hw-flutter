@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "767781573673",
+    "project_id": "news-hw-bdb6d",
+    "storage_bucket": "news-hw-bdb6d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767781573673:android:54cc432c9a7f282eeb3838",
+        "android_client_info": {
+          "package_name": "ru.newsreaderhw"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNA-_XQnI5JM_0dEwCIC4T5uYu2b5a60U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
